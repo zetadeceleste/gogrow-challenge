@@ -2,7 +2,7 @@
 
 .sign-up {
   @extend %page;
-  background-color: $color-bg-sign-up;
+  background-color: $color-sign-up-bg;
 
   .container {
     @extend %container;

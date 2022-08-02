@@ -15,6 +15,7 @@
   &--icon {
     @extend %flexCenter;
     background-color: $color-btn-icon;
+    border: 1px solid $color-btn-icon-border;
     color: $color-btn-icon-font;
     font-weight: 300;
     gap: 10px;
