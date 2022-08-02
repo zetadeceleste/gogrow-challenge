@@ -6,7 +6,7 @@
 
 %breakpoint {
   margin: 0 auto;
-  max-height: $breakpoint-vh;
+  min-height: $breakpoint-vh;
   max-width: $breakpoint-vw;
   width: 100%;
 }
