@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/gogrow-challenge/static/css/main.e8efaefe.css",
+    "main.js": "/gogrow-challenge/static/js/main.8699fd2d.js",
+    "static/js/787.dfc11a1a.chunk.js": "/gogrow-challenge/static/js/787.dfc11a1a.chunk.js",
+    "static/media/facebook.svg": "/gogrow-challenge/static/media/facebook.effe602415ea92c6c2626866c1f0df6a.svg",
+    "static/media/signup-img.png": "/gogrow-challenge/static/media/signup-img.ab98e03c47f5a49e1317.png",
+    "static/media/google.svg": "/gogrow-challenge/static/media/google.5f294b69b1ca98b3a472bb0f92cd0f38.svg",
+    "index.html": "/gogrow-challenge/index.html",
+    "main.e8efaefe.css.map": "/gogrow-challenge/static/css/main.e8efaefe.css.map",
+    "main.8699fd2d.js.map": "/gogrow-challenge/static/js/main.8699fd2d.js.map",
+    "787.dfc11a1a.chunk.js.map": "/gogrow-challenge/static/js/787.dfc11a1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8efaefe.css",
+    "static/js/main.8699fd2d.js"
+  ]
+}
