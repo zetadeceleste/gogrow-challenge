@@ -1,0 +1,9 @@
+.dropdown {
+  @extend %inputFont;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

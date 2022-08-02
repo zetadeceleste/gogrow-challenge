@@ -1,0 +1,46 @@
+%boxShadowContainer {
+  box-shadow: 4px 4px 26px rgba(255, 255, 255, 0.37),
+    4px 4px 16px rgba(255, 255, 255, 0.15),
+    -4px 4px 26px rgba(75, 100, 119, 0.69);
+}
+
+%breakpoint {
+  margin: 0 auto;
+  max-height: $breakpoint-vh;
+  max-width: $breakpoint-vw;
+  width: 100%;
+}
+
+%container {
+  @extend %breakpoint;
+  @extend %boxShadowContainer;
+  border-radius: $radius-container;
+  height: 100%;
+}
+
+%flex {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+}
+
+%flexCenter {
+  @extend %flex;
+  @include justifyContent(center);
+  @include alignItems(center);
+}
+
+%grid {
+  display: -moz-grid;
+  display: -ms-grid;
+  display: grid;
+}
+
+%page {
+  @extend %flexCenter;
+  min-height: 100vh;
+  min-width: 300px;
+  padding: 48px;
+}

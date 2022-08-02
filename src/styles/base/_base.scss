@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  color: $color-link;
+
+  &:hover {
+    color: $color-on-link;
+  }
+}
+
+*,
+body {
+  @extend %font;
+}

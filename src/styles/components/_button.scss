@@ -1,0 +1,32 @@
+.btn {
+  @extend %buttonFont;
+  @extend %flexCenter;
+  background-color: $color-btn;
+  border: none;
+  border-radius: $radius-button;
+  color: $color-btn-font;
+  cursor: pointer;
+  width: 100%;
+
+  &.disabled {
+    background-color: $color-grey-200;
+  }
+
+  &--icon {
+    @extend %flexCenter;
+    background-color: $color-btn-icon;
+    color: $color-btn-icon-font;
+    font-weight: 300;
+    gap: 10px;
+    padding: 5px;
+
+    &:hover {
+      background-color: $color-on-btn-icon;
+    }
+
+    img {
+      height: $icon-size;
+      width: $icon-size;
+    }
+  }
+}

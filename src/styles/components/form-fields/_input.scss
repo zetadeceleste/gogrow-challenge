@@ -1,0 +1,25 @@
+.input-field {
+  @extend %flex;
+  @include flexDirection(column);
+  width: 100%;
+
+  .label,
+  .input {
+    @extend %inputFont;
+  }
+
+  .label {
+    color: $color-grey-300;
+    margin-bottom: -10px;
+  }
+
+  .input {
+    border: none;
+    border-bottom: 1px solid $color-grey-100;
+    padding-left: 5px;
+
+    &:focus{
+        outline: none;
+    }
+  }
+}

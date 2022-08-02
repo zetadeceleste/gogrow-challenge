@@ -1,0 +1,52 @@
+.sign-up--form {
+  @extend %grid;
+  @include alignSelf(center);
+  @include gridTemplateRows(repeat(5, auto));
+  gap: 16px;
+
+  .title {
+    @extend %headline2;
+  }
+
+  .btn-wrapper {
+    @extend %flex;
+    @include alignItems(center);
+    @include flexDirection(column);
+    gap: 16px;
+  }
+
+  .separator {
+    @extend %headline3;
+    @include justifySelf(center);
+    color: $color-grey-200;
+  }
+
+  .form {
+    @extend %flex;
+    @include flexDirection(column);
+    gap: 16px;
+    
+    .fieldset {
+      @extend %flex;
+      @include flexDirection(column);
+    }    
+  }
+
+  .link-login {
+    @extend %paragraph;
+    color: $color-grey-300;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .sign-up--form {
+    @include justifySelf(center);
+    width: 60%;
+
+    .btn-wrapper {
+      @include flexDirection(row);
+      @include justifyContent(space-between);
+    }
+  }
+}

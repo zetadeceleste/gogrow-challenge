@@ -1,0 +1,87 @@
+@import "./form";
+
+.sign-up {
+  @extend %page;
+  background-color: $color-bg-sign-up;
+
+  .container {
+    @extend %container;
+    @extend %grid;
+    @include gridTemplateRows(auto 2fr);
+    background-color: $color-blue-100;
+
+    .first-wrapper {
+      @extend %grid;
+      @include gridTemplateColumns(auto 1fr);
+      gap: 16px;
+      padding: 24px 16px;
+
+      .logo {
+        width: 75px;
+      }
+
+      .title {
+        @extend %headline1;
+        @include alignSelf(center);
+        color: $color-white-100;
+      }
+
+      .image {
+        display: none;
+      }
+    }
+
+    .second-wrapper {
+      @extend %grid;
+      @include gridTemplateRows(auto 1fr);
+      background-color: $color-white-100;
+      border-radius: $radius-container;
+      gap: 16px;
+      padding: 24px 16px;
+
+      .lang-dropdown {
+        @include justifySelf(end);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .sign-up {
+    .container {
+      @include gridTemplateColumns(1fr 2fr);
+      @include gridTemplateRows(1fr);
+
+      .first-wrapper {
+        @include gridTemplateColumns(1fr);
+        @include gridTemplateRows(repeat(2, auto) 1fr);
+        position: relative;
+
+        .logo {
+          width: 125px;
+        }
+
+        .title {
+          padding-left: 10px;
+          width: 250px;
+          z-index: 1;
+        }
+
+        .image {
+          display: block;
+
+          img {
+            bottom: 0;
+            position: absolute;
+            right: -25%;
+            width: 400px;
+          }
+        }
+      }
+
+      .second-wrapper .lang-dropdown {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+%font {
+  font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+}
+
+%buttonFont {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 35px;
+}
+
+%inputFont {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 35px;
+}
+
+%headline1 {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 35px;
+}
+
+%headline2 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 35px;
+}
+
+%headline3 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  line-height: 35px;
+}
+
+%paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 35px;
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  %headline1 {
+    font-size: 36px;
+  }
+  %headline2 {
+    font-size: 24px;
+  }
+
+  %headline3 {
+    font-size: 18px;
+  }
+
+  %paragraph {
+    font-size: 16px;
+  }
+}
