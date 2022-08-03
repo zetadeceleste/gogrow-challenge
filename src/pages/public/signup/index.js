@@ -30,11 +30,11 @@ const SignUp = () => {
           <img
             className="logo"
             src={Logo}
-            alt={translations[language].altLogo}
+            alt={translations[language]?.altLogo}
           />
-          <h1 className="title">{translations[language].title}</h1>
+          <h1 className="title">{translations[language]?.title}</h1>
           <div className="image">
-            <img src={SignupImage} alt={translations[language].altImage} />
+            <img src={SignupImage} alt={translations[language]?.altImage} />
           </div>
         </div>
         <div className="second-wrapper">

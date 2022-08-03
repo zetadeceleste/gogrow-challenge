@@ -1,3 +1,5 @@
+// Code from https://loading.io/css/
+
 import React from "react";
 
 const LoadingSpinner = () => (
